@@ -1,0 +1,247 @@
+html {
+  min-width: 1185px; /* 최소 너비를 320px로 설정 */
+}
+
+body {
+  background: #ffffff;
+  font-family: Pretendard, sans-serif;
+  margin: 0;
+}
+
+.header {
+  background: #ffffff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  /* right: 0px; */
+  width: 100vw;
+  /* width: calc(100vw - (100vw - 100%)); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-sizing: border-box; */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  /* width: 100vw; */
+  width: 120rem;
+  padding: 0.625rem 12.5rem 0.625rem;
+  /* padding: 0.625rem 14px 0.625rem; */
+  box-sizing: border-box;
+}
+
+.header-logo {
+  width: 2.5rem;
+  display: flex;
+}
+
+.header-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.login {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background-color: #3692ff;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 0;
+}
+
+/**
+ * home-top
+ */
+.home-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.25rem;
+  padding: 12.5rem 0 0;
+  background-color: #cfe5ff;
+}
+
+.top-container > h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 1.25rem 0;
+}
+
+.top-container-button {
+  width: 22.3125rem;
+  height: 3.5rem;
+  border-radius: 2.5rem;
+  background-color: #3692ff;
+  border: none;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 6.25rem 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-top > img {
+  /* width: 60%; */
+  width: 46.625rem;
+}
+
+/**
+ * home-item
+ */
+ .home-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding을 그대로 유지할지 여부에 따라 조정 */
+  padding: 8.625rem 0;
+}
+
+.item-container {
+  /* width: 60rem; 고정된 너비 설정 */
+  /* margin: 0 auto; 수평 가운데 정렬 */
+  display: flex;
+  justify-content: center;
+  background-color: #fcfcfc;
+}
+
+.item-container > img {
+  width: 36.75rem; /* 이미지 크기는 고정 */
+  /* flex-shrink: 0; 이미지 크기가 줄어들지 않도록 설정 */
+}
+
+.item-txt {
+  padding: 6.4375rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-shrink: 0; 텍스트 영역이 줄어들지 않도록 설정 */
+}
+
+.item-txt > div {
+  line-height: 1.3;  
+}
+
+.item-txt > .item-type {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #3692ff;
+  margin: 0 0 0.75rem 0;
+}
+
+.item-txt > .item-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #374151;
+  margin: 0 0 1.5rem 0;
+}
+
+.item-txt > .item-description {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+/**
+ * empty-container
+ */
+.empty-container {
+  height: 8.625rem;
+  background-color: #fcfcfc;
+}
+
+/**
+ * home-bottom
+ */
+.home-bottom {
+  background-color: #cfe5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8.9375rem 0 0;
+  gap: 4.3125rem;
+}
+
+.home-bottom > img {
+  width: 46.625rem;
+}
+
+.home-bottom > h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 1.25rem 0;
+  /* flex-shrink: 0; */
+}
+
+/**
+ * footer
+ */
+.footer {
+  background-color: #111827;
+  padding: 2rem 0 6.75rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120rem;
+  padding: 0 2.5rem;
+}
+
+.footer-left {
+  color: #93a3af;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.footer-center {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.footer-center > a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.footer-right {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-right > a > img {
+  width: 1.25rem;
+}
+
+/**
+* 공통
+*/
+.header-logo-title,
+.login,
+.item-container > * {
+  cursor: pointer;
+}
